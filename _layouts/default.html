@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body bgcolor="#FFFFFF" background="{{ site.baseurl }}/images/background2.gif" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <center>
+      <table  width="802" height="100%" border="0" cellpadding="0" cellspacing="0">
+
+        {% include nav.html %}
+
+        <tr>
+          <td width="560" height="500" bgcolor="#FFFFFF" id="content" valign="top">
+            {{ content }}
+          </td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor="#FFFFFF" valign="bottom" id="copyright">
+            <footer class="site-footer">
+              Copyright &copy; 2009 - C-Art Webdesign - Steffen Hauth & Tobias Bielohlawek GdbR <br>
+              Humboldtstr. 2, 55286 W&ouml;rrstadt<br><br>
+              Ausgewählte Bilder werden bereitgestellt von: <a href="http://pixelquelle.de" target="_blank">pixelquelle.de</a>
+              <p>C-Art Webdesign is proudly powered by <a href="http://http://jekyllrb.co/">Jekyll</a><br /></p>
+            </footer>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+    <script type="text/javascript">
+      _uacct = "UA-310284-1";
+      urchinTracker();
+    </script>
+
+  </body>
+</html>
