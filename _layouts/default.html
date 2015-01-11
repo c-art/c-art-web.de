@@ -27,8 +27,12 @@
     </center>
 
     <script type="text/javascript">
-      _uacct = "UA-310284-1";
-      urchinTracker();
+      ga('create', 'UA-310284-1', 'auto');
+      ga('send', 'pageview');
+
+      $( document ).ready(function() {
+        $("#picture").addClass('p' + Math.floor((Math.random() * 15) + 1));
+      });
     </script>
 
   </body>

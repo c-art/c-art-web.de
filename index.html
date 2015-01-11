@@ -5,7 +5,7 @@ color: #FFDA9A
 
 <div id="content" class="narrowcolumn">
 
-  <div class="post-31 post type-post status-publish format-standard sticky hentry category-projects" id="post-31">
+  <div>
     <div class="entry">
       <p>
         Sie wollen sich im Internet präsentieren und suchen einen kompetenten Partner der Sie voll und ganz unterstützt?<br />
@@ -13,14 +13,15 @@ color: #FFDA9A
         Die Inhalte schnell und einfach über ein Content Management System verwalten?
       </p>
 
-      <p>Sie sind bei uns an der richtigen Adresse! » <a href="{{ post.url | prepend: site.baseurl }}">mehr</a></p>
+      <p>Sie sind bei uns an der richtigen Adresse! » <a href="{{ post.url | prepend: site.baseurl }}/loesungen">mehr</a></p>
 
       <p>Auswahl aktueller Projekte:</p>
     </div>
   </div>
 
   {% for post in site.posts %}
-    <div class="post-72 post type-post status-publish format-standard hentry category-projects tag-american tag-ausrustung tag-deutschland tag-football tag-shop" id="post-72">
+    <br />
+    <div>
       <h2><small><em>{{ post.date | date: "%B %Y" }}:</em></small> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
       <div class="entry">
         {{ post.content }}

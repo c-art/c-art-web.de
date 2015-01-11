@@ -2,6 +2,8 @@
 layout: page
 title: Kontakt
 class: green
+order: 5
+permalink: /kontakt/index.html
 ---
 <p>Wir freuen uns, dass Sie mit uns in Kontakt treten m&ouml;chten.</p>
 <p>Unsere Leistungen &uuml;berzeugen Sie? Sie sind an einem individuellem Angebot interessiert? Sie haben noch Fragen?<br />

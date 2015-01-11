@@ -1,8 +1,8 @@
 <tr>
   <td width="3"   height="100%" rowspan="7" bgcolor="#FFFFFF"><img src="{{ "/images/spacer.gif" | prepend: site.baseurl }}" width="3" height="40"></td>
-  <td width="8"   height="100%" rowspan="7" background="/images/left.gif"><img src="{{ "/images/spacer.gif" | prepend: site.baseurl }}" width="8" height="800"></td>
+  <td width="8"   height="100%" rowspan="7" background="{{ "/images/left.gif" | prepend: site.baseurl }}"><img src="{{ "/images/spacer.gif" | prepend: site.baseurl }}" width="8" height="800"></td>
   <td width="670" height="40"   colspan="2" valign="top"><a href="{{ site.baseurl }}/" border="0"><img src="{{ "/images/logo.gif" | prepend: site.baseurl }}" width="670" height="40" border="0" alt="{{ site.title }}"></a></td>
-  <td width="8"   height="100%" rowspan="7" background="/images/right.gif"><img src="{{ "/images/spacer.gif" | prepend: site.baseurl }}" width="8" height="800"></td>
+  <td width="8"   height="100%" rowspan="7" background="{{ "/images/right.gif" | prepend: site.baseurl }}"><img src="{{ "/images/spacer.gif" | prepend: site.baseurl }}" width="8" height="800"></td>
   <td width="3"   height="100%" rowspan="7" bgcolor="#FFFFFF"><img src="{{ "/images/spacer.gif" | prepend: site.baseurl }}" width="3" height="40"></td>
   <td width="110" height="100%" rowspan="7"><img src="{{ "/images/spacer.gif" | prepend: site.baseurl }}" width="110" height="40"></td>
 </tr>
@@ -10,15 +10,16 @@
   <td colspan="2"><img src="{{ "/images/top.gif" | prepend: site.baseurl }}"  valign="top" width="670" height="7"></td>
 </tr>
 <tr height="334">
-  <td colspan="2"><img src="/images/picture-7.jpg" valign="top" width="670" height="334"></td>
+  <td colspan="2"><img id="picture" src="{{ "/images/spacer.gif" | prepend: site.baseurl }}" valign="top" width="670" height="334"></td>
 </tr>
 <tr height="37">
   <td rowspan="3" bgcolor="#FFFFFF" background="{{ "/images/logo_left.gif" | prepend: site.baseurl }}" width="110" height="500" style="background-repeat: no-repeat;"></td>
   <td background="{{ "/images/menu.gif" | prepend: site.baseurl }}" width="560" height="37" align="center" valign="middle" id="menu">
     <nav class="site-nav">
       <ul>
-        <li class="orange">[<a href="{{ site.baseurl }}">Start</a>]</li>
-        {% for page in site.pages %}
+        <li class="orange">[<a href="{{ site.baseurl }}/">Start</a>]</li>
+        {% assign pages = site.pages | sort: "order" %}
+        {% for page in pages %}
           {% if page.title %}
             <li class="{{ page.class }}">[<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>]</li>
           {% endif %}

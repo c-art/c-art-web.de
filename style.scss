@@ -16,10 +16,30 @@ body {
 }
 
 hr {
-  margin: 0;
+  margin: 20px 0px;
   padding: 0;
+  padding-top: 20px;
   border: 0;
   border-bottom: 1px dotted #A5AEC5;
+  clear: both;
+}
+
+#picture {
+  &.p1 { background-image: url("{{ "/images/picture-1.jpg" | prepend: site.baseurl }}"); }
+  &.p2 { background-image: url("{{ "/images/picture-2.jpg" | prepend: site.baseurl }}"); }
+  &.p3 { background-image: url("{{ "/images/picture-3.jpg" | prepend: site.baseurl }}"); }
+  &.p4 { background-image: url("{{ "/images/picture-4.jpg" | prepend: site.baseurl }}"); }
+  &.p5 { background-image: url("{{ "/images/picture-5.jpg" | prepend: site.baseurl }}"); }
+  &.p6 { background-image: url("{{ "/images/picture-6.jpg" | prepend: site.baseurl }}"); }
+  &.p7 { background-image: url("{{ "/images/picture-7.jpg" | prepend: site.baseurl }}"); }
+  &.p8 { background-image: url("{{ "/images/picture-8.jpg" | prepend: site.baseurl }}"); }
+  &.p9 { background-image: url("{{ "/images/picture-9.jpg" | prepend: site.baseurl }}"); }
+  &.p10 { background-image: url("{{ "/images/picture-10.jpg" | prepend: site.baseurl }}"); }
+  &.p11 { background-image: url("{{ "/images/picture-11.jpg" | prepend: site.baseurl }}"); }
+  &.p12 { background-image: url("{{ "/images/picture-12.jpg" | prepend: site.baseurl }}"); }
+  &.p13 { background-image: url("{{ "/images/picture-13.jpg" | prepend: site.baseurl }}"); }
+  &.p14 { background-image: url("{{ "/images/picture-14.jpg" | prepend: site.baseurl }}"); }
+  &.p15 { background-image: url("{{ "/images/picture-15.jpg" | prepend: site.baseurl }}"); }
 }
 
 /* ####################################### */
@@ -125,6 +145,10 @@ hr {
       color:#000;
       text-decoration:underline;
     }
+  }
+
+  img {
+    margin-right: 20px;
   }
 }
 
