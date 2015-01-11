@@ -3,11 +3,11 @@ title: C-Art Webdesign
 email: feedback@videntity.de
 description: >
   because your identity matters
-baseurl: "/sign" # the subpath of your site, e.g. /blog/
-url: "http://www.c-art-web.de" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.c-art-web.de/sign" # the base hostname & protocol for your site
 
 # Outputting
-permalink: /:year/:month/:day/:title/index.html
+permalink: /sign/:year/:month/:day/:title/index.html
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,38 @@
+---
+layout: page
+title: Start
+class: orange
+order: 0
+permalink: /sign/index.html
+---
+<div id="content" class="narrowcolumn">
+
+  <div>
+    <div class="entry">
+      <p>
+        Sie wollen sich im Internet präsentieren und suchen einen kompetenten Partner der Sie voll und ganz unterstützt?<br />
+        Einen modernen Internetauftritt nach aktuellen Standards, Suchmaschinen optimiert? <br />
+        Die Inhalte schnell und einfach über ein Content Management System verwalten?
+      </p>
+
+      <p>Sie sind bei uns an der richtigen Adresse! » <a href="{{ post.url | prepend: site.baseurl }}/loesungen">mehr</a></p>
+
+      <p>Auswahl aktueller Projekte:</p>
+    </div>
+  </div>
+
+  {% for post in site.posts %}
+    <br />
+    <div>
+      <h2><small><em>{{ post.date | date: "%B %Y" }}:</em></small> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <div class="entry">
+        {{ post.content }}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+
+
+

@@ -3,7 +3,7 @@ layout: page
 title: Referenzen
 class: brown
 order: 2
-permalink: /referenzen/index.html
+permalink: /sign/referenzen/index.html
 ---
 Hier eine kleine Auswahl unserer Projekte:
 

@@ -17,7 +17,6 @@
   <td background="{{ "/images/menu.gif" | prepend: site.baseurl }}" width="560" height="37" align="center" valign="middle" id="menu">
     <nav class="site-nav">
       <ul>
-        <li class="orange">[<a href="{{ site.baseurl }}/">Start</a>]</li>
         {% assign pages = site.pages | sort: "order" %}
         {% for page in pages %}
           {% if page.title %}

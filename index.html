@@ -1,36 +1,17 @@
 ---
-layout: default
-color: #FFDA9A
 ---
-
-<div id="content" class="narrowcolumn">
-
-  <div>
-    <div class="entry">
-      <p>
-        Sie wollen sich im Internet präsentieren und suchen einen kompetenten Partner der Sie voll und ganz unterstützt?<br />
-        Einen modernen Internetauftritt nach aktuellen Standards, Suchmaschinen optimiert? <br />
-        Die Inhalte schnell und einfach über ein Content Management System verwalten?
-      </p>
-
-      <p>Sie sind bei uns an der richtigen Adresse! » <a href="{{ post.url | prepend: site.baseurl }}/loesungen">mehr</a></p>
-
-      <p>Auswahl aktueller Projekte:</p>
-    </div>
-  </div>
-
-  {% for post in site.posts %}
-    <br />
-    <div>
-      <h2><small><em>{{ post.date | date: "%B %Y" }}:</em></small> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-      <div class="entry">
-        {{ post.content }}
-      </div>
-    </div>
-  {% endfor %}
-</div>
-
-
-
-
-
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="1;url={{ site.url }}">
+        <script type="text/javascript">
+            window.location.href = "{{ site.url }}"
+        </script>
+        <title>{{ site.title }} Redirection</title>
+    </head>
+    <body>
+        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
+        If you are not redirected automatically, follow the <a href='{{ site.url }}'>link to example</a>
+    </body>
+</html>
